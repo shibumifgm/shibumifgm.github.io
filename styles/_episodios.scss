@@ -1,0 +1,51 @@
+.episodios_container {
+  position: relative;
+  width: 100%;
+  margin-top: 90px;
+
+  background-image: $colordefondo;
+  transform: skew(0, -10deg);
+
+  .episodios {
+    position: relative;
+    background-color: transparent;
+    transform: skew(0, 10deg);
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 40px;
+
+    h2 {
+      margin: 20px 0;
+      font-family: $fuentesans;
+      font-size: 36px;
+      color: #ffffff;
+      letter-spacing: 0;
+      line-height: 42px;
+    }
+    ul {
+      position: relative;
+      margin: auto;
+
+      list-style: none;
+      margin-bottom: 155px;
+
+      li {
+        width: 100%;
+        overflow: hidden;
+
+        iframe {
+          background: unset;
+          position: relative;
+          border-radius: 5%;
+          width: 100%;
+          height: 209px;
+          margin: 0;
+          border: none;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

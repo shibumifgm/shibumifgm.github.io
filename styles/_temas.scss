@@ -1,0 +1,33 @@
+.temas {
+  display: block;
+  position: relative;
+  top: 64px;
+  h2 {
+    margin: 16px;
+    font-family: $fuentesans;
+    font-size: 36px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      font-family: $fuentesans;
+      font-weight: 900;
+      font-size: 24px;
+      color: #060a24;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 20px;
+
+      img {
+        width: 104px;
+        height: 104px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@media screen and(min-width: 910px) {
+  header {
+    height: 80px;
+
+    .logo {
+      position: relative;
+      height: 36px;
+      width: 36px;
+      top: 22px;
+      left: 100px;
+    }
+    .icon_menu {
+      visibility: hidden;
+    }
+
+    .menu {
+      visibility: visible;
+      display: inline-flex;
+
+      ul {
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        right: 100px;
+
+        background-color: transparent;
+
+        li {
+          list-style: none;
+          text-decoration: none;
+          margin: 0 24px;
+          width: auto;
+          height: 28px;
+          a {
+            color: #060a24;
+            font-size: 16px;
+            line-height: 28px;
+          }
+          a:hover {
+            color: #00f3bb;
+            text-decoration: line-through;
+          }
+
+          a:active {
+            color: rgba(6, 10, 36, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  .containerarticle {
+    display: block;
+    position: relative;
+    top: 120px;
+    margin-left: 200px;
+
+    h1 {
+      font-family: $fuentesans;
+      font-size: 64px;
+      color: #060a24;
+      letter-spacing: 0;
+      line-height: 84px;
+    }
+
+    .punto {
+      font-family: $fuentesans;
+      font-size: 64px;
+      color: #0000ec;
+      letter-spacing: 0;
+    }
+    br {
+      display: none;
+    }
+    p {
+      font-family: $fuentemono;
+      font-size: 16px;
+      color: #060a24;
+      letter-spacing: 0;
+      line-height: 24px;
+      width: 628px;
+    }
+    .btn {
+      margin: 56px 0 15px;
+    }
+  }
+
+  .episodios_container {
+    margin-top: 5px;
+
+    .episodios {
+      margin-top: 150px;
+      overflow: hidden;
+      padding: 0;
+
+      h2 {
+        margin: 186px 0 26px 200px;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 72px;
+
+        li {
+          width: 100%;
+
+          iframe {
+            overflow: hidden;
+            border-radius: 0;
+            border: 0;
+            background: unset;
+            height: 231px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .novedades {
+    h2 br {
+      display: none;
+    }
+    section {
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%);
+      height: 350px;
+    }
+  }
+
+  .telefono {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    margin-top: -155px;
+    img {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      align-content: center;
+    }
+
+    h2 {
+      display: inline-flex;
+      align-items: center;
+      br {
+        display: none;
+      }
+    }
+    p {
+      display: inline-flex;
+      align-items: flex-start;
+      margin-right: 50px;
+    }
+  }
+
+  .temas {
+    h2 {
+      margin-left: 200px;
+    }
+    br {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 70px;
+    }
+  }
+}

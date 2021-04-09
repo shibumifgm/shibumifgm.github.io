@@ -1,0 +1,56 @@
+.footer {
+  display: block;
+  position: relative;
+  margin: 50px 0;
+
+  top: 24px;
+  background-color: white;
+  h3 {
+    margin: 24px 0 16px 0;
+    text-align: center;
+    font-family: $fuentemono;
+    font-size: 14px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  div {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      width: 16px;
+      height: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      margin-left: 50px;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      margin: 0 100px;
+      padding-top: 20px;
+
+      a {
+        color: none;
+
+        i {
+          width: 18px;
+          height: 18px;
+          outline: none;
+          color: none;
+        }
+      }
+    }
+  }
+}
